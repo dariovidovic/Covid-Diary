@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acc_bg"
+    tools:context=".PollResultsActivity">
+
+    <Button
+        android:id="@+id/dayFourResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_4_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayThreeResultsButton" />
+
+    <Button
+        android:id="@+id/dayFiveResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_5_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayFourResultsButton" />
+
+    <Button
+        android:id="@+id/daySixResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_6_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayFiveResultsButton" />
+
+    <Button
+        android:id="@+id/daySevenResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_7_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daySixResultsButton" />
+
+    <Button
+        android:id="@+id/dayEightResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_8_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daySevenResultsButton" />
+
+    <Button
+        android:id="@+id/dayNineResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_9_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayEightResultsButton" />
+
+    <Button
+        android:id="@+id/dayTenResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_10_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayNineResultsButton" />
+
+    <Button
+        android:id="@+id/goBackFromPollResultsButton"
+        android:layout_width="109dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/natrag"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/dayOneResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_1_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dayTwoResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_2_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayOneResultsButton" />
+
+    <Button
+        android:id="@+id/dayThreeResultsButton"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/_3_dan"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayTwoResultsButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

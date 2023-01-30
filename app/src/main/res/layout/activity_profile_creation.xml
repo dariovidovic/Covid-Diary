@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/form_bg"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="153dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".ProfileCreationActivity">
+
+
+        <RadioGroup
+            android:id="@+id/workplaceGroup"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vaccineGroup">
+
+            <RadioButton
+                android:id="@+id/riskButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/da"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/notRiskButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ne"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/vaccineGroup"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="752dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pregnancyGroup">
+
+            <RadioButton
+                android:id="@+id/vaccinatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/da"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/notVaccinatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ne"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="187dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="76dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/genderTextView"
+            app:layout_constraintTop_toBottomOf="@+id/enterAge">
+
+            <RadioButton
+                android:id="@+id/maleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/femaleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/otherButton"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ostalo"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/goBackFromProfileCreationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="288dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_corners"
+            android:text="@string/go_back"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="172dp"
+            android:text="@string/submit"
+            android:background="@drawable/button_corners"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/enterFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="104dp"
+            android:ems="10"
+            android:hint="@string/ime_i_prezime"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/genderTextView"
+            android:layout_width="56dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/spol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterAge"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="70dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/jeste_li_pu_a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="71dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/jeste_li_trudni"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderTextView"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioGroup
+            android:id="@+id/pregnancyGroup"
+            android:layout_width="131dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="132dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderGroup">
+
+            <RadioButton
+                android:id="@+id/pregnantButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/da"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+            <RadioButton
+                android:id="@+id/notPregnantButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ne"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/smokingGroup"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="120dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pregnancyGroup">
+
+            <RadioButton
+                android:id="@+id/smokerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/da"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/notSmokerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ne"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/diseaseView"
+            android:layout_width="107dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="173dp"
+            android:text="@string/povijest_bolesti"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smokingGroup"
+            tools:ignore="TextContrastCheck" />
+
+        <CheckBox
+            android:id="@+id/cvdBox"
+            android:layout_width="169dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="186dp"
+            android:text="@string/kardiovaskularne_bolesti"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diseaseView" />
+
+        <CheckBox
+            android:id="@+id/hivBox"
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="272dp"
+            android:text="@string/hiv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvdBox" />
+
+        <CheckBox
+            android:id="@+id/cancerBox"
+            android:layout_width="85dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="272dp"
+            android:text="@string/rak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hivBox" />
+
+        <CheckBox
+            android:id="@+id/diabetesBox"
+            android:layout_width="106dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="251dp"
+            android:text="@string/dijabetes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cancerBox" />
+
+        <CheckBox
+            android:id="@+id/transplantBox"
+            android:layout_width="165dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="192dp"
+            android:text="@string/transplant_organa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diabetesBox" />
+
+        <CheckBox
+            android:id="@+id/lungDiseaseBox"
+            android:layout_width="224dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="133dp"
+            android:text="@string/bolesti_plu_a_i_di_nih_puteva"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transplantBox" />
+
+        <CheckBox
+            android:id="@+id/immuneSystemBox"
+            android:layout_width="190dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="167dp"
+            android:text="@string/slabi_imunosni_sustav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lungDiseaseBox" />
+
+        <CheckBox
+            android:id="@+id/chronicLiverBox"
+            android:layout_width="176dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="181dp"
+            android:text="@string/kroni_na_bolest_jetre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/immuneSystemBox" />
+
+        <CheckBox
+            android:id="@+id/chronicKidneyBox"
+            android:layout_width="192dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="165dp"
+            android:text="@string/kroni_na_bolest_bubrega"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chronicLiverBox" />
+
+        <CheckBox
+            android:id="@+id/downSyndromeBox"
+            android:layout_width="135dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="222dp"
+            android:text="@string/down_sindrom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chronicKidneyBox" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="154dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="300dp"
+            android:text="@string/jeste_li_cijepljeni"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/vaccineGroup"
+            app:layout_constraintTop_toBottomOf="@+id/downSyndromeBox" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="189dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/je_li_va_e_zanimanje_visokorizi_no_skrb_za_starije_osobe_rad_u_zdravstvu_vojska_izlo_enost_ljudima"
+            app:layout_constraintEnd_toStartOf="@+id/workplaceGroup"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/enterAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="37dp"
+            android:ems="10"
+            android:hint="@string/dob"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/genderTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterFullName"
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck"
+            android:importantForAutofill="no" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

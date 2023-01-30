@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acc_bg"
+    tools:context=".Account">
+
+    <Button
+        android:id="@+id/dayThreeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/_3_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayTwoButton" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/odjavi_se"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="124dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/profil"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signOutButton"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dayTwoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/_2_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayOneButton" />
+
+    <Button
+        android:id="@+id/dayFourButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/_4_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayThreeButton" />
+
+    <Button
+        android:id="@+id/dayFiveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/_5_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayFourButton" />
+
+    <Button
+        android:id="@+id/dayOneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/_1_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/daySixButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/_6_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/dayOneButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/daySevenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/_7_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/dayTwoButton"
+        app:layout_constraintTop_toBottomOf="@+id/daySixButton" />
+
+    <Button
+        android:id="@+id/dayEightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/_8_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/dayThreeButton"
+        app:layout_constraintTop_toBottomOf="@+id/daySevenButton" />
+
+    <Button
+        android:id="@+id/dayNineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/_9_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/dayFourButton"
+        app:layout_constraintTop_toBottomOf="@+id/dayEightButton" />
+
+    <Button
+        android:id="@+id/dayTenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/_10_dan"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/dayFiveButton"
+        app:layout_constraintTop_toBottomOf="@+id/dayNineButton" />
+
+    <Button
+        android:id="@+id/resultsButton"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/rezultati"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/profileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

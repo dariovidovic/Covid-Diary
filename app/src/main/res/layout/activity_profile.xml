@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acc_bg"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/pVaccine"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="17dp"
+        android:hint="@string/cijepljenost"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pGender" />
+
+    <TextView
+        android:id="@+id/pGender"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="17dp"
+        android:hint="@string/spol_"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pAge" />
+
+    <TextView
+        android:id="@+id/pAge"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="17dp"
+        android:hint="@string/dob_"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pName" />
+
+    <Button
+        android:id="@+id/goBackFromProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="252dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/go_back"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="176dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="116dp"
+        android:hint="@string/ime"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pDiseaseHistory"
+        android:layout_width="191dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="147dp"
+        android:hint="@string/bolesti"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pVaccine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

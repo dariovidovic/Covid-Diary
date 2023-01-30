@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/form_bg"
+    tools:ignore="SpeakableTextPresentCheck"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".PollActivity">
+
+        <RadioGroup
+            android:id="@+id/runnyNose"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/bodyAches">
+
+
+            <RadioButton
+                android:id="@+id/runnyNoseYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <RadioButton
+                android:id="@+id/runnyNoseNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/nausea"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/runnyNose">
+
+
+            <RadioButton
+                android:id="@+id/nauseaYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da" />
+
+            <RadioButton
+                android:id="@+id/nauseaNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/tiredness"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/soreThroat">
+
+
+            <RadioButton
+                android:id="@+id/tirednessYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <RadioButton
+                android:id="@+id/tirednessNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/bodyAches"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/tiredness">
+
+
+            <RadioButton
+                android:id="@+id/bodyAchesYe"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da" />
+
+            <RadioButton
+                android:id="@+id/bodyAchesNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/soreThroat"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/headache">
+
+
+            <RadioButton
+                android:id="@+id/soreThroatYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da" />
+
+            <RadioButton
+                android:id="@+id/soreThroatNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/headache"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/cough">
+
+
+            <RadioButton
+                android:id="@+id/headacheYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da" />
+
+            <RadioButton
+                android:id="@+id/headacheNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/cough"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/enterTemperature">
+
+
+            <RadioButton
+                android:id="@+id/coughYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da" />
+
+            <RadioButton
+                android:id="@+id/coughNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/lossOfSense"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/chestPain">
+
+
+            <RadioButton
+                android:id="@+id/lossOfSenseYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da" />
+
+            <RadioButton
+                android:id="@+id/lossOfSenseNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/chestPain"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/mobility">
+
+
+            <RadioButton
+                android:id="@+id/chestPainYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da" />
+
+            <RadioButton
+                android:id="@+id/chestPainNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/mobility"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/difficultyBreathing">
+
+
+            <RadioButton
+                android:id="@+id/mobilityYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da" />
+
+            <RadioButton
+                android:id="@+id/mobilityNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="160dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="90dp"
+            android:text="@string/imate_li_ote_ano_disanje_ili_kratko_u_daha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/imate_li_gubitak_govora_ili_kretanja"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/imate_li_bol_u_prsima"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/kolika_vam_je_temperatura"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/imate_li_ka_alj"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/imate_li_glavobolju"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/boli_li_vas_grlo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/jeste_li_izgubili_osjet_njuha_ili_okusa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/osje_ate_li_se_iscrpljeno"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/imate_li_bolove_u_tijelu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/imate_li_za_epljeni_nos_curenje_iz_nosa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/osje_ate_li_mu_ninu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <Button
+            android:id="@+id/savePollButton"
+            android:layout_width="96dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/unesi"
+            android:background="@drawable/button_corners"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <Button
+            android:id="@+id/goBackFromPollButton"
+            android:layout_width="123dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/povratak_nazad"
+            android:background="@drawable/button_corners"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/savePollButton" />
+
+        <RadioGroup
+            android:id="@+id/difficultyBreathing"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RadioButton
+                android:id="@+id/difficultyBreathingYes"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/da" />
+
+            <RadioButton
+                android:id="@+id/difficultyBreathingNo"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:text="@string/ne" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/enterTemperature"
+            android:layout_width="118dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/lossOfSense"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

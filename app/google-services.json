@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "894443104430",
+    "project_id": "covid-journal-e4523",
+    "storage_bucket": "covid-journal-e4523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894443104430:android:ddb91f07e859b566b8a53f",
+        "android_client_info": {
+          "package_name": "com.example.covid_journal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894443104430-s1depf9gah9tul2jhi2t75qlqb5p712u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgHroIj-qF9OIfPolbpj9roMm1h_Syc1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894443104430-s1depf9gah9tul2jhi2t75qlqb5p712u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

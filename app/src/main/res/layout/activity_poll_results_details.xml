@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acc_bg"
+    tools:context=".PollResultsDetailsActivity">
+
+    <TextView
+        android:id="@+id/bodyAchesSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/bolovi_u_tijelu"
+        app:layout_constraintStart_toEndOf="@+id/lossOfSenseSymptom"
+        app:layout_constraintTop_toBottomOf="@+id/tirednessSymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/runnyNoseSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/za_epljeni_nos_n_curenje_iz_nosa"
+        app:layout_constraintStart_toEndOf="@+id/temperatureSymptom"
+        app:layout_constraintTop_toBottomOf="@+id/bodyAchesSymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/nauseaSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:hint="@string/mu_nina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coughSymptom"
+        app:layout_constraintTop_toBottomOf="@+id/runnyNoseSymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/lossOfSenseSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/gubitak_osjeta_njuha_n_okusa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chestPainSymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tirednessSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/iscrpljenost"
+        app:layout_constraintStart_toEndOf="@+id/chestPainSymptom"
+        app:layout_constraintTop_toBottomOf="@+id/soreThroatSymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/mobilitySymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/gubitak_govora_nkretanja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyBreathingSymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/goBackFromPollResultsDetailsButton"
+        android:layout_width="97dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/natrag"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/difficultyBreathingSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/ote_ano_disanje_n_kratko_a_daha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/chestPainSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/bol_u_prsima"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobilitySymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/soreThroatSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/bol_u_grlu"
+        app:layout_constraintStart_toEndOf="@+id/mobilitySymptom"
+        app:layout_constraintTop_toBottomOf="@+id/headacheSymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/headacheSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/glavobolja"
+        app:layout_constraintStart_toEndOf="@+id/difficultyBreathingSymptom"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/temperatureSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/temperatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lossOfSenseSymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/coughSymptom"
+        android:layout_width="166dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/ka_alj"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureSymptom"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/advices"
+        android:layout_width="355dp"
+        android:layout_height="323dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:scrollbars="horizontal"
+        android:text="@string/preporuke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nauseaSymptom"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
